@@ -1,4 +1,5 @@
-import cmd, sys
+import cmd
+import sys
 
 from facilities.lot import Lot
 from vehicle.car import Car
@@ -96,6 +97,7 @@ class Parkmatic(cmd.Cmd):
 
     def do_EOF(self, line):
         return True
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] != '':
