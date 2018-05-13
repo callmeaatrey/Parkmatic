@@ -1,6 +1,5 @@
 from unittest import TestCase
-from parking_lot.src.vehicle.car import Car
-
+from park_matic.src.vehicle.car import Car
 
 class CarTest(TestCase):
     """ Tests for 'car.py' """

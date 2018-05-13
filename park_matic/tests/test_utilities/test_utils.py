@@ -1,7 +1,7 @@
 from unittest import TestCase
-from parking_lot.src.utilities.utils import Utilities
-from parking_lot.src.facilities.lot import Lot
-from parking_lot.src.vehicle.car import Car
+from park_matic.src.utilities.utils import Utilities
+from park_matic.src.facilities.lot import Lot
+from park_matic.src.vehicle.car import Car
 
 class UtilsTest(TestCase):
     """ Tests for 'utils.py' """

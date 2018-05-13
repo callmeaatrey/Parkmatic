@@ -1,0 +1,1 @@
+alias parking_lot='./parking_lot.sh'

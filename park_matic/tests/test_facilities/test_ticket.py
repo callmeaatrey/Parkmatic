@@ -1,5 +1,5 @@
 from unittest import TestCase
-from parking_lot.src.facilities.ticket import Ticket
+from park_matic.src.facilities.ticket import Ticket
 
 class TicketTest(TestCase):
     """ Tests for 'ticket.py' """

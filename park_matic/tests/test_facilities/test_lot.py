@@ -1,6 +1,6 @@
 from unittest import TestCase
-from parking_lot.src.facilities.lot import Lot
-from parking_lot.src.vehicle.car import Car
+from park_matic.src.facilities.lot import Lot
+from park_matic.src.vehicle.car import Car
 
 
 class LotTest(TestCase):
