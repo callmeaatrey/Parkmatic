@@ -1,6 +1,7 @@
 from unittest import TestCase
 from parking_lot.src.vehicle.car import Car
 
+
 class CarTest(TestCase):
     """ Tests for 'car.py' """
 

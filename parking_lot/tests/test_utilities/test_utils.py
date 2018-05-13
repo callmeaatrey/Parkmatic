@@ -49,5 +49,5 @@ class UtilsTest(TestCase):
 
         self.assertEqual(
             Utilities.slot_numbers_for_cars_with_colour(self.test_lot.get_spaces, 'Sapphire Red'),
-            [2, 3]
+            ['2', '3']
         )

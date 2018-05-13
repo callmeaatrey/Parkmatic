@@ -2,6 +2,7 @@ from unittest import TestCase
 from parking_lot.src.facilities.space import Space
 from parking_lot.src.vehicle.car import Car
 
+
 class SpaceTest(TestCase):
     """ Tests for 'space.py' """
 

@@ -8,7 +8,7 @@ from utilities.utils import Utilities
 class Parkmatic(cmd.Cmd):
     """ Command line interface for the parking lot """
 
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 2 and sys.argv[1] != '':
         # Disable rawinput module use
         use_rawinput = False
 
@@ -98,7 +98,7 @@ class Parkmatic(cmd.Cmd):
         return True
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 1 and sys.argv[1] != '':
         input = open(sys.argv[1], 'rt')
         try:
             Parkmatic(stdin=input).cmdloop()
