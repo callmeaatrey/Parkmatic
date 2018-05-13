@@ -71,7 +71,8 @@ class Parkmatic(cmd.Cmd):
         'Gives us the registration number of the parked cars with a particular colour'
 
         try:
-            Utilities.registration_numbers_for_cars_with_colour(lot.get_spaces, arg)
+            reg_nos = Utilities.registration_numbers_for_cars_with_colour(lot.get_spaces, arg)
+            print ', '.join(reg_nos)
         except NameError:
             print 'No parking lot found.'
 
@@ -79,7 +80,8 @@ class Parkmatic(cmd.Cmd):
         'Gives us the slot numbers for cars with a particular colour'
 
         try:
-            Utilities.slot_numbers_for_cars_with_colour(lot.get_spaces, arg)
+            slot_nos = Utilities.slot_numbers_for_cars_with_colour(lot.get_spaces, arg)
+            print ', '.join(slot_nos)
         except NameError:
             print 'No parking lot found.'
 
@@ -87,7 +89,8 @@ class Parkmatic(cmd.Cmd):
         'Gives us the slot number of a particular car'
 
         try:
-            Utilities.slot_number_for_registration_number(lot.get_spaces, arg)
+            slot = Utilities.slot_number_for_registration_number(lot.get_spaces, arg)
+            print slot
         except NameError:
             print 'No parking lot found.'
 

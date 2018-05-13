@@ -12,22 +12,19 @@ class Utilities(object):
                     cars.append(spaces[index].get_vehicle.get_regno)
 
         if not found:
-            print "Not Found"
+            return 'Not found'
         else:
-            print ', '.join(cars)
+            return cars
 
     """ Method for finding the slot number corresponding to a registration number of a car """
     @staticmethod
     def slot_number_for_registration_number(spaces, regno):
-        found = False
         for index in spaces:
             if spaces[index].get_vehicle != None:
                 if spaces[index].get_vehicle.get_regno == regno:
-                    print spaces[index].get_spaceid
-                    found = True
+                    return spaces[index].get_spaceid
 
-        if not found:
-            print "Not Found"
+        return 'Not found'
 
     """ Method for finding the slot numbers for cars with a particular colour """
     @staticmethod
@@ -41,6 +38,6 @@ class Utilities(object):
                     slots.append(str(spaces[index].get_spaceid))
 
         if not found:
-            print "Not Found"
+            return 'Not found'
         else:
-            print ', '.join(slots)
+            return slots
